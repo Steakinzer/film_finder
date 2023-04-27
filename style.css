@@ -3,14 +3,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: red 1px solid;
+  /* outline: red 1px solid; */
 }
 body {
   color: rgb(226, 224, 224);
   background-color: rgb(17, 16, 16);
   font-family: "Roboto", sans-serif;
 }
-
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .card {
   display: flex;
   width: 100%;
@@ -68,6 +73,8 @@ h1 {
   z-index: 1;
   color: black;
   transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: none;
 }
 #popup {
   height: 80vh;
@@ -80,7 +87,7 @@ h1 {
   /* z-index: 1; */
   transform: translate(-50%, -50%);
   display: flex;
-  /* display: none; */
+  display: none;
   border-radius: 20px;
 }
 

@@ -128,4 +128,5 @@ function createPopup(movie, img) {
 cross.addEventListener("click", function () {
   popup.style.display = "none";
   cross.style.display = "none";
+  popup.innerHTML = "";
 });
